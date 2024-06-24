@@ -1,0 +1,67 @@
+$font-family-base: Arial, sans-serif;
+$background-color-base: #ffffff;
+$header-bg-color: #1100ff;
+$text-color: #fff;
+$nav-bg-color: #333;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $header-bg-color;
+    color: $text-color;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+@mixin center-block {
+    display: block;
+    margin: auto;
+}
+
+img {
+    @include center-block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
