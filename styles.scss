@@ -1,18 +1,21 @@
 $font-family-base: Arial, sans-serif;
-$background-color-base: #ffffff;
-$header-bg-color: #1100ff;
-$text-color: #fff;
-$nav-bg-color: #333;
+$colors: (
+background-color-base: #3b90ff,
+header-bg-color: #1100ff,
+text-color: #fff,
+nav-bg-color: #333,
+);
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: map-get($colors, background-color-base);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: $header-bg-color;
-    color: $text-color;
+    background-color: map-get($colors, header-bg-color);
+    color: map-get($colors, text-color);
     text-align: center;
     padding: 10px 0;
     position: relative;
@@ -36,7 +39,7 @@ img {
 }
 
 nav {
-    background-color: #333;
+    background-color: map-get($colors, nav-bg-color);
 }
 
 nav ul {
