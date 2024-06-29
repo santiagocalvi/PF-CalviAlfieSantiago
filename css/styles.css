@@ -40,6 +40,27 @@ img:hover {
   transform: scale(1.05);
 }
 
+.boton-contenedor {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-agregar-carrito {
+  background-color: #265cf0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agregar-carrito:hover {
+  background-color: #265cf0;
+}
+
 nav {
   background-color: #333;
 }

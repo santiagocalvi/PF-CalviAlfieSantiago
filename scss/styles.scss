@@ -3,6 +3,7 @@ background-color-base: #8fbfff,
 header-bg-color: #1100ff,
 text-color: #fff,
 nav-bg-color: #333,
+btn-hover-color: #265cf0,
 );
 
 body {
@@ -51,6 +52,27 @@ img {
         transform: scale(1.05); 
     }
 }
+
+.boton-contenedor {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-agregar-carrito {
+    background-color: map-get($colors, btn-hover-color); 
+    color: map-get($colors, text-color); 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .btn-agregar-carrito:hover {
+    background-color: map-get($colors, btn-hover-color); 
+  }
 
 nav {
     background-color: map-get($colors, nav-bg-color);
