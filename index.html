@@ -11,35 +11,59 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-        <header class="col-12">
-          <h1>ELECTRIC CLOTHES</h1>
-        </header>
-    </div>
+  <header class="col-12">
+    <h1>ELECTRIC CLOTHES</h1>
+  </header>
+  <div class="container-fluid">
     <div class="row">
       <nav class="col-12">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <div class="menu-carrito">
+              <button class="btn btn-outline-light"><img src="img/carrito.png" alt="Carrito"></button>
+            </div>
+          </div>
+        </nav>
       </nav>
     </div>
+    <div class="row no-gutters">
+      <div class="col-12">
+        <img src="img/portada.jpg" alt="Imagen de portada" class="img-fluid portada">
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <main>
         <article>
             <section>
                 <h2>Productos Destacados</h2>
                 <div class="row">
                     <div class="col-12 col-md-6">
-                      <a href="remera1.html"><img src="img/remera1.jpeg" alt="Remera 1"></a>
+                      <a href="remera1.html"><img src="img/remera1.jpeg" alt="Remera 1" class="producto-imagen"></a>
                       <p>Remera Oversize Mujer</p>
-                      <p>$20.000</p>
+                      <div class="precio-contenedor">
+                        <p class="precio">$20.000</p>
+                      </div>
                     </div>
                     <div class="col-12 col-md-6">
-                      <a href="remera2.html"><img src="img/remera2.jpeg" alt="Remera 2"></a>
+                      <a href="remera2.html"><img src="img/remera2.jpeg" alt="Remera 2" class="producto-imagen"></a>
                       <p>Remera Oversize Hombre</p>
-                      <p>$20.000</p>
+                      <div class="precio-contenedor">
+                        <p class="precio">$20.000</p>
+                      </div>
                     </div>
                 </div>
             </section>
